@@ -1,0 +1,7 @@
+This is a Python program that implements a word guessing game. The program starts by defining a function 
+setup_game(), which reads a list of words from a file named 'words.txt', selects a random word from the list, initializes a game board with underscores in place of each letter of the word, and returns the selected word along with the board and a list of used letters.
+
+The program then enters into a loop where it repeatedly prompts the user to guess a letter in the word. When the user inputs a valid letter, the program checks if the letter appears in the word. If it does, the program updates the board to reveal the letter's position(s) and adds the letter to the list of used letters. Otherwise, the program adds the letter to the list of used letters but does not update the board. The loop continues until the user has correctly guessed all letters in the word.
+
+After the user has successfully guessed the word, the program asks if the user wants to play again. If so, the program calls the 
+setup_game() function again to start a new game with a new word. If not, the program exits. The program also includes some print statements for displaying the game board and messages to the user.
